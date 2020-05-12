@@ -40,10 +40,6 @@ namespace BethanyPieShop.Controllers
                 CurrentCategory = currentCategory
             });
 
-            PiesListViewModel piesListViewModel = new PiesListViewModel();
-            piesListViewModel.Pies = pieRepository.AllPies;
-            piesListViewModel.CurrentCategory = "Cheese cakes";
-            return View(piesListViewModel);
         }
 
         public IActionResult Details(int id)
